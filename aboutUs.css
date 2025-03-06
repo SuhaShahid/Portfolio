@@ -1,0 +1,187 @@
+
+.aboutUs{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    flex-direction: row;
+    /* padding: 10px; */
+    /* background-color: rgb(160, 200, 236); */
+}
+.about-section  {
+    background-color: aliceblue;
+}
+.imageUser{
+    align-content: center;
+    height: 350px;
+    width: 350px;
+    padding: 5px;
+}
+#profilePic{
+    align-content: center;
+    height: 350px;
+    width: 350px;
+    padding: 5px;
+}
+.about{
+    align-content: center;
+    padding: 10px 40px;
+    margin: 0;
+
+}
+.about h1{
+    font-size: 45px;
+    margin-top: 5px;
+}
+.about h4{
+    font-size: 30px;
+}
+.about p{
+margin: 1px;
+    
+}
+.two-col{
+    display: flex;
+    gap: 100px;
+    
+}
+.one-col{
+    padding: 0;
+    display: inline;
+    flex-direction: row;
+    list-style: none;
+    row-gap: 10px;
+}
+.col-two{
+    display: inline;
+    flex-direction: row;
+    list-style: none;
+    row-gap: 10px;
+}
+.col-two li,.col-one li{
+    padding: 2% 0;
+}
+i{
+    color: rgb(105, 141, 214);
+}
+.btn-download{    
+    padding: 15px;
+    text-align: center;
+    display: block;
+}
+#download{
+    background-color: #a9a9f4;
+    color: white;
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
+    border-radius: 3px;
+    /* padding: 0 30px; */
+    margin: 10px 0 0 5px;
+}
+#download:hover{
+    background-color: #8b8bf8;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .aboutUs {
+        flex-direction: column;
+        /* padding: 10px; */
+    }
+    .about{
+        align-content: center;
+        padding:0;
+        margin: 0;
+    }
+    .imageUser, .about {
+        width: 100%;
+        text-align: center;
+    }
+    .imageUser {
+        padding: 0;
+    }
+    #profilePic {
+        height: 250px;
+        width: 250px;
+    }
+    .heading{
+        padding: 0;
+        margin: 0%;
+    }
+    .about h1 {
+        font-size: 24px;
+    }
+    /* .about h1{
+        font-size: 45px;
+        margin-top: 5px;
+    } */
+    .about h4{
+        font-size: 18px;
+    }
+    .about p{
+        font-size: 14px; 
+    }
+    
+    .two-col {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .one-col, .col-two {
+        text-align: center;
+        font-size: 14px;
+    }
+    i{
+        color: rgb(105, 141, 214);
+    }
+    #download{
+        width: 150px;
+    }
+    #download:hover {
+        background-color: #8b8bf8;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .aboutUs {
+        flex-direction: row;
+        align-items: center;
+        /* padding: 20px; */
+    }
+    #profilePic {
+        height: 300px;
+        width: 300px;
+    }
+    .about h1 {
+        font-size: 32px;
+    }
+    .two-col {
+        gap: 80px;
+    }
+    .col-one, .col-two {
+        padding: 0 20px;
+    }
+    #download:hover {
+        background-color: #8b8bf8;
+    }
+}
+@media screen and (min-width: 1025px)  {
+    /* .aboutUs {
+        padding: 30px;
+    } */
+    #profilePic {
+        height: 330px;
+        width: 350px;
+    }
+    .about h1 {
+        font-size: 36px;
+    }
+    .two-col {
+        gap: 100px;
+    }
+    .col-one, .col-two {
+        padding: 0 30px;
+    }
+}
